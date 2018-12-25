@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table style='text-align:left;border:solid' border="1">	
+		<tr><td>姓名</td><td>年龄</td></tr>
+		 <?php
+		     $conn = mysqli_connect('localhost','root','root');
+			     if($conn){
+					echo '连接成功';
+		     }else{
+		     	echo '连接失败';
+		     }
+		 
+		        
+		    mysqli_query($conn,"use myapp");
+		    mysqli_query($conn,"set name utf-8");
+		 
+		    $sql = 'select username,password from users';
+		    $retval = mysqli_query($conn,$sql);
+		    echo '<h3>在WEB页面显示以下内容：学生表中所有男生的年龄及姓名；</h3>';
+		 
+		    // $row=mysqli_fetch_assoc($retval);
+		    // print_r($row);
+		    // $row=mysqli_fetch_assoc($retval);
+		    // print_r($row);//这个只能一行一行的输出
+		 
+		    $num=mysqli_num_rows($retval);
+		    //这里用一个for循环输出所有满足条件的查询语句
+		    for ($i=0; $i <$num ; $i++) { 
+		    	$row=mysqli_fetch_assoc($retval);
+		    	$name=$row['username'];
+		    	$age=$row['password'];
+		    	echo "<tr><td>$name</td><td>$age</td><tr>";
+		 
+		    }
+		    //快速获取数据的条数,不用通过查询所有条数
+		    $result=mysqli_query($conn,'select count(*)from course');
+		    $num1=mysqli_fetch_array($result);
+		    echo '数据条数'.$num1[0];
+		     
+			?>
+ 		</table>
+	</body>
+</html>
