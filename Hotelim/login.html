@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="textml; charset=UTF-8">
+		<title>登陆页面</title>
+		<link rel="stylesheet" href="css/him.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js/him.js" ></script>
+	</head>
+	<body>
+		<div class="dialog" id="dialog">
+			<div class="d_header" id="d_header">
+				<span class="d_title">酒店管理系统登陆</span>
+			</div>
+			<div class="d_content" id="d_content">
+				<form action="logincheck.php" method="post">
+					<span class="d_tip" id="d_tip"></span>
+					<div class="d_input d_inputt"><input type="text" name="username" id="username" value="" placeholder="用户名"/></div>
+					<div class="d_input d_inputd"><input type="password" name="password" id="password" value="" placeholder="密码"/></div>
+					<div class="d_submit"><input type="submit" name="submit" id="submit" value="登陆" /></div>
+				</form>
+			</div>
+			<div class="d_footer" id="d_footer">
+			</div>
+		</div>
+	</body>
+</html>

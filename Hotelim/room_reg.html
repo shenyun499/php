@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/him.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<span>信息输入区</span>
+		</div>
+		<div class="main">
+			<!--这里是房间登记处
+			房间号关闭
+			证件类型，证件名，证件号，姓名，性别，电话
+			订单编号，客人证件号，入住日期，预计离开日期-->
+			<!--
+				1、获取数据
+				2、根据房间号，将room状态改为入住
+				3、输入开房信息(订单号,房号)book_room
+				4、将证件类型号和证件名称写入paper_type
+				5、输入顾客信息（证件号码，证件类型号，姓名，性别，联系电话）customer
+				6、输入订单信息（订单编号，客人证件号，入住日期，预计离开日期）order_log
+			-->
+			<form action="room_reg.php" method="post" target="cont">
+			<div class="input-wrap2">
+				<div class="input-div2">
+					<label style="letter-spacing: 15px;">房间号</label>：<input type="text" placeholder="" name="room_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 7.5px;">订单编号</label>：<input type="text" placeholder="" name="order_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 7.5px;">证件号码</label>：<input type="text" placeholder="" name="cust_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 3px;">证件类型号</label>：<input type="text" placeholder="" name="ptype_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 30px;">姓名</label>：<input type="text" placeholder="" name="cust_name" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 30px;">性别</label>：<input type="text" placeholder="" name="nex" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 30px;">电话</label>：<input type="text" placeholder="" name="phone"/>
+				</div>
+				<div class="input-div2">
+					<label>预计离开日期：</label><input type="datetime" placeholder="" name="plan_leave_date"/>
+				</div>
+				<div class="input-su2">
+					<input type="submit" name="submit" value="确认开房"/>
+				</div>
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

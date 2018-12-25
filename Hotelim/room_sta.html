@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/him.css"/>
+		
+	</head>
+	<body>
+		<div class="top">
+			<span>信息输入区</span>
+		</div>
+		<div class="main">
+			<div class="room_stai">
+				<form action="room_queryshow.php" method="post" target="cont">
+					<input type="text" name="room_id" id="roin" value="" placeholder="房间号"/>
+					<input type="hidden" name="is_all" value="0" />
+					<input class="robu" type="submit" value="根据房间号查询"/>
+				</form>
+				<form action="room_queryshow.php" method="post" target="cont">
+					<input type="hidden" name="is_all" value="1" />
+					<input type="hidden" name="room_id" id="roin" value=""/>
+					<input class="robu" type="submit" value="查询所有房间状态"/>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

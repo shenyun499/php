@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/him.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<span>信息输入区</span>
+		</div>
+		<div class="main">
+			<form action="room_book.php" method="post" target="cont">
+			<div class="input-wrap2">
+				<div class="input-div2">
+					<label style="letter-spacing: 15px;">房间号</label>：<input type="text" placeholder="" name="room_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 7.5px;">订单编号</label>：<input type="text" placeholder="" name="order_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 7.5px;">证件号码</label>：<input type="text" placeholder="" name="cust_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 3px;">证件类型号</label>：<input type="text" placeholder="" name="ptype_id" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 30px;">姓名</label>：<input type="text" placeholder="" name="cust_name" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 30px;">性别</label>：<input type="text" placeholder="" name="nex" />
+				</div>
+				<div class="input-div2">
+					<label style="letter-spacing: 30px;">电话</label>：<input type="text" placeholder="" name="phone"/>
+				</div>
+				<div class="input-div2">
+					<label>预计入住日期：</label><input type="datetime" placeholder="" name="plan_enter_date"/>
+				</div>
+				<div class="input-su2">
+					<input type="submit" name="submit" value="确认预定"/>
+				</div>
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

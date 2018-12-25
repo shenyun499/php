@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/him.css" />
+		<script type="text/javascript" >
+			window.onload=function()
+			{
+			 statUp();
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="Parent">
+			<div class="top">
+				<span>功能选择区</span>
+			</div>
+			<ul id="nav">
+				<li>
+					<a href="javascript:void(0);" onclick="doMenu(this)" class="ia">前台操作</a>
+					<ul>
+						<li>
+							<a href="room_reg.html" target="info">开房登记</a>
+						</li>
+						<li>
+							<a href="room_fis.html" target="info">退房结账</a>
+						</li>
+						<li>
+							<a href="room_sta.html" target="info">房间状态查看</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="doMenu(this)" class="ia">预定管理</a>
+					<ul>
+						<li>
+							<a href="room_book.html" target="info">预定房间</a>
+						</li>
+						<li>
+							<a href="room_booken.html" target="info">预定入住</a>
+						</li>
+						<li>
+							<a href="room_bookou.html" target="info">解除预定</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="doMenu(this)" class="ia">信息查询</a>
+					<ul>
+						<li>
+							<a href="room_enshow.php" target="cont">在住客人列表查询</a>
+						</li>
+						<li>
+							<a href="room_bookshow.php" target="cont">预定客人列表查询</a>
+						</li>
+						<li>
+							<a href="room_hisshow.php" target="cont">历史客人列表查询</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" onclick="doMenu(this)" class="ia">报表统计</a>
+					<ul>
+						<li>
+							<a href="m_en.php" target="cont">开房记录统计</a>
+						</li>
+						<li>
+							<a href="m_ou.php" target="cont">退房结账统计</a>
+						</li>
+						<li>
+							<a href="m_yu.php" target="cont">预定房间统计</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="bo"></div>
+		</div>
+	</body>
+	<script src="js/him.js"></script>
+</html>
