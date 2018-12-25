@@ -1,0 +1,60 @@
+body {
+	width: 100%;
+	height: 100%;
+	background: url(../img/backimg.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.tab input{border: none;outline: none;text-align: center; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none;}
+label {color: white;}
+.title { text-align: center;margin: 100px 0 20px 0;color: white;letter-spacing: 10px;font-size: 40px;}
+.input-wrap {position: relative; top: 20px; left: 40%;}
+.input-div { margin: 10px 0;}
+.pa {letter-spacing: 5px;}
+.t { margin-right: 20px;}
+.input-su { float: left;padding: 20px;}
+.input-su input { width: 80px;height: 35px;border-radius: 10px;background: #F5F5DB;}
+
+.input-wrap2 { position: relative; width: 40%;height: 300px;top: 10px;left: 30%;}
+.input-div2 { float: left;padding: 10px 15px;height: 25px;}
+.input-su2 { clear: both;margin-left: 40%;padding: 12px;}
+.input-su2 input { width: 100px;height: 40px;border-radius: 10px;background: #F5F5DB;}
+
+.menu { width: 60%; height: 50px; line-height: 50px; text-align: center; position: relative;top: 10px;left: 20%;}
+.bu { float: left; width: 20%;}
+.bu input { width: 80px;height: 25px;background: #F5F5DB;}
+.all { width: 60%; height: 250px; position: relative;top: 10px;left: 20%;background: white;overflow: auto;}
+.tab { width:140% ;border: 1px solid black;border-collapse: collapse;background: #FFFFFF;text-align: center;}
+.tab tr { border: 1px solid black;}
+.tab td{ border: 1px solid black;width: 13%;}
+.tab th{ border: 1px solid black;background: #D4CFC9;width: 13%;}
+.te {background: #D4CFC9;}
+
+.menu2 { width: 10%; height: 250px; position: absolute; top: 230px; right: 8%;}
+.bu2 { padding: 20px 0;}
+.bu2 input { width: 80px;height: 25px;background: #F5F5DB;}
+
+.all2 { border: 1px solid black; width: 80%; height: 150px; position: relative;top: 10px;left: 10%;background: #00FFFF;overflow: auto;}
+.tab2 { width: 50%; border: 1px solid black;border-collapse: collapse;background: #FFFFFF;text-align: center;}
+.tab2 tr { border: 1px solid black;}
+.tab2 td{ border: 1px solid black;width: 20%;}
+.tab2 th{ border: 1px solid black;background: #D4CFC9;width: 20%;}
+.te {background: #D4CFC9;}
+
+.context { width: 70%; height: 100px; position: relative;top: 65px;left: 10%;border: 1px solid #F1F3BF;}
+.url { padding: 10px;}
+.url input { width: 40%;height: 20px;}
+
+.menu3 { width: 10%; height: 250px; position: absolute; top: 335px; right: 10%;text-align: right;}
+.bu3 { padding: 10px 0;}
+.bu3 input { width: 80px;height: 25px;background: #F5F5DB;}
+
+.menu4 { width: 70%; height: 50px; line-height: 50px; text-align: center; position: relative;top: 86px;left: 10%;}
+
+.input-wrap3 { position: relative; width: 25%;height: 130px;top: 100px;left: 40%;}
+.input-div3 {float: left;padding: 10px 15px;height: 25px;}
+.input-div3 label { width: 100px;}
+.name {letter-spacing: 5px;}
+.password{letter-spacing: 1em;}
+.input-su3 { clear: both;margin-left: 46%;padding: 12px;margin-top: 100px;}
+.input-su3 input { width: 80px;height: 35px;border-radius: 10px;background: #F5F5DB;}
